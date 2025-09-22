@@ -1,0 +1,18 @@
+resources:
+  jobs:
+    Ingestão_de_Dados_IPTU:
+      name: Ingestão_de_Dados_IPTU
+    schedule:
+      quartz_cron_expression: 59 0 8 * * ?
+      timezone_id: America/Sao_Paulo
+      pause_satus: UNPAUSED 
+    tasks:
+      - task_key: INGESTAO_DADOS
+        notebook_task:
+          notebook_path: /Workspace/Users/douglasfmedeiros@outlook.com/desafio_neurotech/04_ingestao_dados
+        base_parameters:
+          - PROJETO: IPTU Recife			
+        source: WORKSPACE
+    queue:
+      enabled: true
+    performance_target: PERFORMANCE_OPTIMIZED
