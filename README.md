@@ -19,6 +19,8 @@ Para testar os notebooks desenvolvidos, execute os passos a seguir:
 3. Execute o notebook _04_ingestao_dados_, o qual vai realizar a ingestão, transformação e refinamento dos dados nas camadas bronze, silver e gold
 4. Execute o notebook _05_analise_dados_ para verificar todas as análises que foram realizadas
 
+Caso seja necessário, pode utilizar o arquivo yaml disponível neste repositório para criar um workflow no Databricks e agendar a execução do pipeline de dados. O arquivo está com agendamento prévio configurado para executar diariamente às 8h, mas isso pode ser ajustado diretamente no arquivo ou na interface gráfica do Databricks.
+
 Para a transformação de dados foram definidos critérios de qualidade e diversos passos de limpeza, todo o log do passo a passo de execução pode ser observado no notebook _04_ingestao_dados_ após a sua finalização.
 
 Também foi deixado neste diretório uma cópia do dataframe final com todos os dados tratados e unificados, no arquivo dados_iptu_unificado.zip.
