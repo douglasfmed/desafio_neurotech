@@ -10,7 +10,7 @@ O diagrama da solução de dados desenvolvido está ilustrado na imagem abaixo:
 
 ![Diagrama da arquitetura](arquitetura_solucao_dados.png)
 
-A orquestração do pipeline de dados foi realizada por meio do workflow de um Databricks (arquivo wflow_ingestao_dados_IPTU.yaml disponível neste repositório) que executa o notebook principal chamado _04_ingestao_dados_. Este notebook atua como controlador do pipeline de ingestão de dados, orquestrando a execução sequencial dos notebooks que compõem as etapas da arquitetura em camadas. São invocados, em ordem, os seguintes módulos: *01_ingestao_camada_bronze*, responsável pela ingestão bruta dos dados, *02_ingestao_camada_silver*, encarregado da transformação e refinamento dos dados e *03_ingestao_camada_gold*, que realiza a unificação das tabelas e disponibiliza os dados para consumo analítico.
+A orquestração do pipeline de dados foi realizada por meio do workflow de um Databricks (arquivo *wflow_ingestao_dados_IPTU.yaml*, disponível neste repositório) que executa o notebook principal chamado _04_ingestao_dados_. Este notebook atua como controlador do pipeline de ingestão de dados, orquestrando a execução sequencial dos notebooks que compõem as etapas da arquitetura em camadas. São invocados, em ordem, os seguintes módulos: *01_ingestao_camada_bronze*, responsável pela ingestão bruta dos dados, *02_ingestao_camada_silver*, encarregado da transformação e refinamento dos dados e *03_ingestao_camada_gold*, que realiza a unificação das tabelas e disponibiliza os dados para consumo analítico.
 
 Para testar os notebooks desenvolvidos, execute os passos a seguir:
 
