@@ -20,3 +20,5 @@ Para testar os notebooks desenvolvidos, execute os passos a seguir:
 4. Execute o notebook _05_analise_dados_ para verificar todas as análises que foram realizadas
 
 Para a transformação de dados foram definidos critérios de qualidade e diversos passos de limpeza, todo o log do passo a passo de execução pode ser observado no notebook _04_ingestao_dados_ após a sua finalização.
+
+Também foi deixado neste diretório uma cópia do dataframe final com todos os dados tratados e unificados, no arquivo dados_iptu_unificado.zip.
