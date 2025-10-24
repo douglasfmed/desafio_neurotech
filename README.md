@@ -1,7 +1,6 @@
 # Desafio Neurotech
 
-- Vaga: Analista de Dados II (Engenharia)
-- Candidato: Douglas de Farias Medeiros
+- Douglas de Farias Medeiros
 - Desafio: Orquestração e Análise dos Dados de IPTU do Recife
 
 Para o desafio, foram considerados os dados brutos de IPTU da cidade do Recife, fornecidos pela empresa Neurotech, em formato CSV e JSON. Além disso, foi utilizada a arquitetura medalhão e a ferramenta Databricks na sua versão gratuita para desenvolvimento dos pipelines de ingestão e transformação dos dados com PySpark e um notebook com a análise dos dados tratados.
